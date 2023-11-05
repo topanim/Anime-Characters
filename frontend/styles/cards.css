@@ -1,0 +1,48 @@
+.item {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px 10px 10px 20px;
+    box-shadow: rgba(256, 256, 256, 0.2) -20px 19px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) -20px 19px 29px 0px; */
+    border-radius: 12px;
+}
+.hero {
+    width: 100%;
+    transform: translate(0, -40%);
+}
+.hero-icon-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.about {
+    margin: 10px 0;
+}
+.hero-name {
+    font-family: BalooThambi2-Bold;
+    font-size: 26px;
+    margin: 0 20% 0 0;
+    color: #FFF;
+}
+.hero-about {
+    margin: 0;
+    font-family: BalooThambi2-Regular;
+    font-weight: lighter;
+    color: #FFF;
+}
+.hero-icon {
+    height: 332px;
+    width: min-content;
+}
+.learn-more {
+    font-family: BankGothic-Medium;
+    color: #FFF;
+    visibility: collapse;
+}
+.item:hover .learn-more {
+    visibility: visible;
+}
+.item:hover .hero-icon-block {
+    transform: rotate(10deg) scale(1.1);
+}

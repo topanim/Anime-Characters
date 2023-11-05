@@ -1,0 +1,53 @@
+header {
+  height: 5vh;
+  background: #fff;
+  padding: 5px 10px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.25);
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  /* background: #eca400; */
+  color: #000000;
+  right: 0;
+  left: 0;
+}
+.wrapper {
+  width: 100%;
+}
+.wrapper, header, .logo, .buttons {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.buttons, .logo, .wrapper {
+  height: 100%;
+}
+.login-button {
+  height: min-content;
+  background: #fff;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: #000 solid 0.5px;
+  font-family: BalooThambi2-Regular;
+  font-size: 2.5vh;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.login-button:hover {
+  background: #eca400;
+  color: #fff;
+  border: none;
+  /* box-shadow: rgba(100, 100, 111, 0.5) 5px 5px 29px 0px; */
+}
+.logo {
+  text-decoration: none;
+  font-size: 3vh;
+  font-family: BankGothic-Medium;
+  display: flex;
+  color: #eca400;
+}
+.nomargin {
+  margin: 0;
+}

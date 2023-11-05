@@ -1,0 +1,15 @@
+html {
+	height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+main {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	background: linear-gradient(45deg, #da3323, #8f1f1b);
+}
