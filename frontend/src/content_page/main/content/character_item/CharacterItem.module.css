@@ -11,7 +11,7 @@
     width: 100%;
     transform: translate(0, -35%);
 }
-.hero-icon-block {
+.hero_icon_block {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -19,30 +19,30 @@
 .about {
     margin: 10px 0;
 }
-.hero-name {
+.hero_name {
     font-family: BalooThambi2-Bold;
     font-size: 26px;
     margin: 0 20% 0 0;
     color: #FFF;
 }
-.hero-about {
+.hero_about {
     margin: 0;
     font-family: BalooThambi2-Regular;
     font-weight: lighter;
     color: #FFF;
 }
-.hero-icon {
+.hero_icon {
     height: 332px;
     width: min-content;
 }
-.learn-more {
+.learn_more {
     font-family: BankGothic-Medium;
     color: #FFF;
     visibility: collapse;
 }
-.item:hover .learn-more {
+.item:hover .learn_more {
     visibility: visible;
 }
-.item:hover .hero-icon-block {
+.item:hover .hero_icon_block {
     transform: rotate(10deg) scale(1.1);
 }
