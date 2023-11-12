@@ -1,12 +1,15 @@
 import hashlib
 
 from django.http import JsonResponse
-from characters.dataclasses.responses import Body, Status
+from django.views.decorators.csrf import csrf_exempt
+
+from characters.utils.responses import Body, Status
 from characters.forms.UserForm import UserForm
 
 from characters.models_dir.UserModel import UserModel
 
 
+@csrf_exempt
 def sign_up(request):
     if request.method == 'GET':
         return JsonResponse(
@@ -40,6 +43,7 @@ def sign_up(request):
     )
 
 
+@csrf_exempt
 def login(request):
     body = request.GET
     user = auth(body)

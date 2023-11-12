@@ -1,7 +1,7 @@
 from django.db import models
 from django.db.models.signals import pre_delete
 
-from characters.signals.delete import delete_user_icon
+# from characters.signals.delete import delete_user_icon
 
 
 class UserModel(models.Model):
@@ -15,4 +15,4 @@ class UserModel(models.Model):
         app_label = 'characters'
 
 
-pre_delete.connect(delete_user_icon, UserModel)
+# pre_delete.connect(delete_user_icon, UserModel)

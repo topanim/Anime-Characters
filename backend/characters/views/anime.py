@@ -3,12 +3,14 @@ from random import shuffle
 from django.core.paginator import Paginator
 from django.core.serializers import serialize
 from django.http import JsonResponse, HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
-from characters.dataclasses.responses import Body, Status
+from characters.utils.responses import Body, Status
 from characters.forms.AnimeForm import AnimeForm
 from characters.models_dir import AnimeModel
 
 
+@csrf_exempt
 def create_anime(request):
     if request.method == 'GET':
         return JsonResponse(
@@ -34,6 +36,7 @@ def create_anime(request):
     )
 
 
+@csrf_exempt
 def get_anime_all(request):
     if request.method != 'GET':
         return JsonResponse(
@@ -61,6 +64,7 @@ def get_anime_all(request):
     return HttpResponse(data_json, content_type='application/json')
 
 
+@csrf_exempt
 def get_anime(request, id):
     if request.method != 'GET':
         return JsonResponse(
@@ -80,6 +84,7 @@ def get_anime(request, id):
     return HttpResponse(data_json, content_type='application/json')
 
 
+@csrf_exempt
 def delete_all_anime(request):
     AnimeModel.objects.all().delete()
     return JsonResponse(

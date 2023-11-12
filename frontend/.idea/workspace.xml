@@ -5,7 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c8591e-1159-4b81-86ac-f34bc65cc057" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/API/testGetCharacters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/dataclasses/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/dataclasses/responses.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/utils/responses.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/forms/HeroForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/forms/HeroForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/models_dir/HeroModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/models_dir/HeroModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/signals/delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/signals/delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/validators/file_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/validators/file_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/validators/image_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/validators/image_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/views/anime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/views/anime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/views/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/views/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/views/heroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/views/heroes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/characters/views/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/views/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/media/anime/banners/pngegg_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/media/heroes/images/pngegg_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/media/heroes/images/pngegg_5_WxpF8Vt.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/API/AnimeAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/AnimeAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/API/getCharacters.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/getCharacters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/API/testGetCharacters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/content/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/content/Container.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/Container.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/content/character_item/CharacterItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content_page/main/content/character_item/CharacterItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +67,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kriti/PycharmProjects/Anime-Characters/frontend&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "feature",
+    "last_opened_file_path": "C:/Users/kriti/PycharmProjects/Anime-Characters/frontend",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kriti\PycharmProjects\Anime-Characters\frontend\src" />
+      <recent name="C:\Users\kriti\PycharmProjects\Anime-Characters\frontend" />
+      <recent name="C:\Users\kriti\PycharmProjects\Anime-Characters\frontend\src\components" />
       <recent name="C:\Users\kriti\PycharmProjects\Anime-Characters\frontend\src\content_page" />
     </key>
   </component>
@@ -70,6 +106,7 @@
       <workItem from="1699547807647" duration="99000" />
       <workItem from="1699547919503" duration="1278000" />
       <workItem from="1699550729166" duration="3472000" />
+      <workItem from="1699798733266" duration="11514000" />
     </task>
     <servers />
   </component>

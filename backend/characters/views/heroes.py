@@ -4,12 +4,14 @@ from django.core import serializers
 from django.core.paginator import Paginator
 from django.core.serializers import serialize
 from django.http import JsonResponse, HttpResponse, Http404
+from django.views.decorators.csrf import csrf_exempt
 
-from characters.dataclasses.responses import Body, Status
+from characters.utils.responses import Body, Status
 from characters.forms.HeroForm import HeroForm
 from characters.models_dir import HeroModel, AnimeModel
 
 
+@csrf_exempt
 def create_hero(request):
     if request.method == 'GET':
         return JsonResponse(
@@ -36,6 +38,7 @@ def create_hero(request):
     )
 
 
+@csrf_exempt
 def get_heroes(request):
     if request.method != 'GET':
         return JsonResponse(
@@ -63,6 +66,7 @@ def get_heroes(request):
     return HttpResponse(data_json, content_type='application/json')
 
 
+@csrf_exempt
 def get_hero(request, id):
     if request.method != 'GET':
         return JsonResponse(
@@ -79,3 +83,19 @@ def get_hero(request, id):
         )
     data_json = serialize('json', data)
     return HttpResponse(data_json, content_type='application/json')
+
+
+@csrf_exempt
+def delete_all_heroes(request):
+    if request.method != 'GET':
+        return JsonResponse(
+            data=Body.BAD_REQUEST,
+            status=Status.BAD_REQUEST
+        )
+
+    HeroModel.objects.all().delete()
+
+    return JsonResponse(
+        data=Body.DELETED,
+        status=Status.DELETED
+    )
