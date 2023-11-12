@@ -16,10 +16,11 @@ def sign_up(request):
 
     body = request.POST
     form = UserForm(body)
+
     if not form.is_valid():
         return JsonResponse(
-            data=Body.BAD_REQUEST,
-            status=Status.BAD_REQUEST
+            data=Body.INVALID_FORM_BODY,
+            status=Status.INVALID
         )
 
     user = form.save(commit=False)
@@ -33,32 +34,19 @@ def sign_up(request):
     user.password = make_password(user.password)
     user.save()
 
-    resp = Body.AUTHORIZED_TRUE
-    resp['user'] = {
-        'username': body.get('username'),
-        'password': body.get('password')
-    }
-
     return JsonResponse(
-        data=resp,
+        data=add_user_data(Body.AUTHORIZED_TRUE, body),
         status=Status.OK
     )
 
 
 def login(request):
     body = request.GET
-
     user = auth(body)
-    print(user)
 
     if user:
-        resp = Body.AUTHORIZED_TRUE
-        resp['user'] = {
-            'username': body.get('username'),
-            'password': body.get('password')
-        }
         return JsonResponse(
-            data=resp,
+            data=add_user_data(Body.AUTHORIZED_TRUE, body),
             status=Status.OK
         )
     else:
@@ -80,25 +68,26 @@ def auth(obj) -> bool:
     username = obj.get('username')
     password = obj.get('password')
 
-    print(username, password)
-
     if not (username and password):
         return False
 
-    print("1 porog")
     password = make_password(password)
     user = UserModel.objects.filter(username=username).first()
-    print(user.username)
-    print(user.password)
-    print(password)
 
     if user and password == user.password:
-        print(True)
         return True
-    print(False)
     return False
 
 
 def make_password(password):
     hashed_password = hashlib.md5(password.encode()).hexdigest()
     return hashed_password
+
+
+def add_user_data(response, body):
+    response['user'] = {
+        'username': body.get('username'),
+        'password': body.get('password')
+    }
+
+    return response
