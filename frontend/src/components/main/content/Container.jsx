@@ -1,27 +1,27 @@
 import React, {useEffect, useState} from 'react';
 import classes from "./Container.module.css";
-import {AnimeAPI} from "../../../API/AnimeAPI";
+import AnimeAPI from "../../../API/AnimeAPI";
 import CharacterItem from "./character_item/CharacterItem";
 
-const Container = () => {
+export function Container() {
   const [data, setData] = useState([])
   const [fetching, setFetching] = useState(true);
 
-  useEffect((fetching) => {
-    console.log(fetching)
-
+  useEffect(() => {
     if (!fetching) {return}
 
-    AnimeAPI.testGetCharacters().then((response) => {
-      setData(response.data);
+    AnimeAPI.getCharacters().then((response) => {
+      console.log(response);
+      setData(response);
       setFetching(false);
     });
   }, [fetching]);
 
   useEffect(() => {
-    document.addEventListener('scroll', scrollHandler)
 
-    return function() {
+    console.log('[ rfrfz nj');
+    document.addEventListener('scroll', scrollHandler)
+    return () => {
       document.removeEventListener('scroll', scrollHandler)
     }
   }, []);
@@ -34,9 +34,9 @@ const Container = () => {
 
   return (
     <div className={classes.container}>
-      <CharacterItem data='' />
+      {
+        data.map(item => <CharacterItem key={item.pk} item={item}/>)
+      }
     </div>
   );
 };
-
-export default Container;

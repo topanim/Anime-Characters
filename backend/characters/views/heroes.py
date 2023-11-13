@@ -74,9 +74,9 @@ def get_hero(request, id):
             status=Status.BAD_REQUEST
         )
 
-    data = HeroModel.objects.filter(pk=id)
+    data = HeroModel.objects.filter(pk=id).first()
 
-    if not data.first():
+    if not data:
         return JsonResponse(
             data=Body.NOT_FOUND,
             status=Status.NOT_FOUND
@@ -98,4 +98,27 @@ def delete_all_heroes(request):
     return JsonResponse(
         data=Body.DELETED,
         status=Status.DELETED
+    )
+
+
+@csrf_exempt
+def get_hero_image_url(request, id):
+    if request.method != 'GET':
+        return JsonResponse(
+            data=Body.BAD_REQUEST,
+            status=Status.BAD_REQUEST
+        )
+
+    hero = HeroModel.objects.filter(pk=id).first()
+    if not hero:
+        return JsonResponse(
+            data=Body.NOT_FOUND,
+            status=Status.NOT_FOUND
+        )
+
+    return JsonResponse(
+        data={
+            'url': hero.image.url
+        },
+        status=Status.OK
     )

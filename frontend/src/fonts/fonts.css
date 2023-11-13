@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'BalooThambi2-Bold';
+    src: url('./BalooThambi2/BalooThambi2-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BalooThambi2-ExtraBold';
+    src: url('./BalooThambi2/BalooThambi2-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BalooThambi2-Medium';
+    src: url('./BalooThambi2/BalooThambi2-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BalooThambi2-Regular';
+    src: url('./BalooThambi2/BalooThambi2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BalooThambi2-SemiBold';
+    src: url('./BalooThambi2/BalooThambi2-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BankGothic-Medium';
+    src: url('./BankGothic/BankGothic-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

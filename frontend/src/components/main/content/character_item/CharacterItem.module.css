@@ -1,3 +1,6 @@
+@import "../../../../fonts/fonts.css";
+
+
 .item {
     height: 300px;
     width: 300px;
@@ -20,14 +23,14 @@
     margin: 10px 0;
 }
 .hero_name {
-    font-family: BalooThambi2-Bold;
+    font-family: 'BalooThambi2-Bold', serif;
     font-size: 26px;
     margin: 0 20% 0 0;
     color: #FFF;
 }
 .hero_about {
     margin: 0;
-    font-family: BalooThambi2-Regular;
+    font-family: 'BalooThambi2-Regular', serif;
     font-weight: lighter;
     color: #FFF;
 }
@@ -35,12 +38,16 @@
     height: 332px;
     width: min-content;
 }
-.learn_more {
-    font-family: BankGothic-Medium;
+.read_more {
+    margin: 0;
+    font-family: 'BankGothic-Medium', serif;
     color: #FFF;
     visibility: collapse;
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: pointer;
 }
-.item:hover .learn_more {
+.item:hover .read_more {
     visibility: visible;
 }
 .item:hover .hero_icon_block {

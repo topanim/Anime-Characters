@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from "./content/Container";
-import {AnimeAPI} from '../../API/AnimeAPI';
+import {Container} from "./content/Container";
+import AnimeAPI from '../../API/AnimeAPI';
 
-const Main = () => {
-	const response = AnimeAPI.testGetCharacters();
+export const Main = () => {
+	const response = AnimeAPI.getCharacters();
 	console.log(response)
 
 
@@ -13,5 +13,3 @@ const Main = () => {
     </main>
   );
 };
-
-export default Main;

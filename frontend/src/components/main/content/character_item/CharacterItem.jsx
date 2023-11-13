@@ -1,18 +1,27 @@
 import React from 'react';
 import classes from "./CharacterItem.module.css";
+import AnimeAPI from "../../../../API/AnimeAPI";
 
-const CharacterItem = ({hero}) => {
+function CharacterItem({item}){
+
+  const hero = item.fields
+  const animeName = AnimeAPI.getAnimeNameById(hero.anime)
+  console.log(`zig hail${animeName}`);
+  const url = AnimeAPI.getCharacterImageUrl(hero.image)
+
   return (
-    <div className={classes.item}>
+    <div className={classes.item} style={{
+      background: `linear-gradient(45deg, ${hero.bottom_color} ${hero.bottom}, ${hero.top_color} ${hero.top})`
+    }}>
       <div className={classes.hero}>
         <div className={classes.hero_icon_block}>
-          <img alt="Hero icon" className={classes.hero_icon} src={hero.src}/>
+          <img alt="Hero icon" className={classes.hero_icon} src={url}/>
         </div>
-        <div className="about">
+        <div className={classes.about}>
           <p className={classes.hero_name}>{hero.name}</p>
-          <p className="hero-about"><strong>Anime:</strong>{hero.anime}</p>
+          <p className={classes.hero_about}><strong>Anime: </strong>{animeName}</p>
         </div>
-        <a className={classes.learn_more} href={hero.about} target="_blank">READ MORE</a>
+        <p className={classes.read_more}>READ MORE</p>
       </div>
     </div>
   );
