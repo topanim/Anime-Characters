@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48c8591e-1159-4b81-86ac-f34bc65cc057" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/fonts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/characters/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/characters/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/characters/views/heroes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/characters/views/heroes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/media/anime/banners/15004259_0_79_1498_922_1920x0_80_0_0_755b86203a4fd51ccdedb135ae54193f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/media/heroes/images/pngegg_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/media/heroes/images/pngegg_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/media/heroes/images/pngegg_4_YNKZs3F.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/AnimeAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/AnimeAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/getCharacters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/testGetCharacters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/content/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/content/character_item/CharacterItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +77,7 @@
       <workItem from="1699547919503" duration="1278000" />
       <workItem from="1699550729166" duration="3472000" />
       <workItem from="1699798733266" duration="11601000" />
-      <workItem from="1699884140598" duration="10740000" />
+      <workItem from="1699884140598" duration="16922000" />
     </task>
     <servers />
   </component>

@@ -2,12 +2,13 @@ import React from 'react';
 import classes from "./CharacterItem.module.css";
 import AnimeAPI from "../../../../API/AnimeAPI";
 
-function CharacterItem({item}){
+export function CharacterItem({item}){
 
-  const hero = item.fields
-  const animeName = AnimeAPI.getAnimeNameById(hero.anime)
-  console.log(`zig hail${animeName}`);
-  const url = AnimeAPI.getCharacterImageUrl(hero.image)
+  const hero = item.fields;
+  const animeName = AnimeAPI.getAnimeNameById(hero.anime);
+  console.log(animeName);
+  console.log(typeof animeName);
+  const url = AnimeAPI.getCharacterImageUrl(hero.image);
 
   return (
     <div className={classes.item} style={{
@@ -26,5 +27,3 @@ function CharacterItem({item}){
     </div>
   );
 };
-
-export default CharacterItem;

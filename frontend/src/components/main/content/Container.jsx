@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import classes from "./Container.module.css";
 import AnimeAPI from "../../../API/AnimeAPI";
-import CharacterItem from "./character_item/CharacterItem";
+import {CharacterItem} from "./character_item/CharacterItem";
 
 export function Container() {
   const [data, setData] = useState([])
@@ -19,7 +19,7 @@ export function Container() {
 
   useEffect(() => {
 
-    console.log('[ rfrfz nj');
+    console.log('onscroll');
     document.addEventListener('scroll', scrollHandler)
     return () => {
       document.removeEventListener('scroll', scrollHandler)
